@@ -1,15 +1,23 @@
 * {
   margin: 0;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'ChosunGu', sans-serif;
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'ChosunGu';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'ChosunGu', sans-serif;
 }
 
 body {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'ChosunGu', sans-serif;
 }
 
 h1 {
