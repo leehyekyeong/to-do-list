@@ -56,6 +56,11 @@ form {
 #task-list li {
   position: relative;
   padding: 12px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+#task-list li:last-child {
+  border: none;
 }
 
 #task-list .item {
