@@ -1,2 +1,63 @@
 @import './base/normalize';
 @import './base/reset';
+
+body {
+  padding: 40px;
+  font-size: 20px;
+}
+
+h1 {
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.content {
+  width: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#task-input {
+  width: 432px;
+  height: 40px;
+  border: 1px solid #303030;
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+
+#task-submit {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #303030;
+  border-radius: 8px;
+  background-color: #303030;
+  color: #ffffff;
+  transition: background-color 250ms ease-in-out;
+}
+
+#task-submit:hover {
+  background-color: #808080;
+}
+
+#task-list {
+  width: 100%;
+  padding: 8px;
+}
+
+#task-list li {
+  height: 24px;
+  margin-bottom: 16px;
+}
+
+#task-list li:last-child {
+  margin: 0;
+}
