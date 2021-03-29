@@ -26,7 +26,13 @@ function addTask() {
   // console.log(taskList[taskList.length - 1]);
   var listItem = document.createElement('li');
   list.appendChild(listItem);
-  listItem.innerHTML = taskList[taskList.length - 1];
+
+  listItem.innerHTML =
+    '<span class="item">' +
+    taskList[taskList.length - 1] +
+    '</span>' +
+    '<span class="removeItem">×</span>';
+
   // for (var i = 0; i < taskList.length; i++) {
   //   // list.innerHTML += '<li>' + taskList[i] + '</li>';
   //   list.innerHTML +=

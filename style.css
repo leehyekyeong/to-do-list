@@ -394,8 +394,17 @@ form {
   padding: 8px; }
 
 #task-list li {
-  height: 24px;
-  margin-bottom: 16px; }
+  position: relative;
+  padding: 12px 0; }
 
-#task-list li:last-child {
-  margin: 0; }
+#task-list .item {
+  display: inline-block;
+  height: 20px; }
+
+#task-list .removeItem {
+  position: absolute;
+  right: -8px;
+  text-align: center;
+  width: 40px;
+  height: 20px;
+  cursor: pointer; }
