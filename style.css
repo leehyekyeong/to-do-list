@@ -391,7 +391,7 @@ body {
 .add-icon {
   width: 20px;
   height: 20px;
-  background-image: url("../assets/plus-icon-m.svg");
+  background-image: url("./assets/plus-icon-m.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
@@ -414,9 +414,10 @@ body {
   width: 44px;
   height: 44px;
   padding: 16px;
-  background-image: url("../assets/remove-button.svg");
+  background-image: url("./assets/remove-button.svg");
   background-position: center center;
   background-repeat: no-repeat;
+  cursor: pointer;
   position: absolute;
   top: 0;
   right: -16px; }
