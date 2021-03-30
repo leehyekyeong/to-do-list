@@ -31,11 +31,16 @@ function addTask() {
     '<span class="item">' +
     taskList[taskList.length - 1] +
     '</span>' +
-    '<span class="removeItem">×</span>';
+    '<span class="removeButton" onclick="removeTask(this)">×</span>';
 
   // for (var i = 0; i < taskList.length; i++) {
   //   // list.innerHTML += '<li>' + taskList[i] + '</li>';
   //   list.innerHTML +=
   //     '<li id=task-' + (i + 1) + '>' + (i + 1) + '. ' + taskList[i] + '</li>';
   // }
+}
+
+function removeTask(removeButton) {
+  const li = removeButton.parentNode;
+  li.parentNode.removeChild(li);
 }
