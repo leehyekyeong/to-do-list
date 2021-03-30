@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
 html {
   line-height: 1.15;
   /* 1 */
@@ -305,20 +306,14 @@ template {
 
 * {
   margin: 0;
-  font-family: 'ChosunGu', sans-serif;
-  box-sizing: border-box; }
-
-@font-face {
-  font-family: 'ChosunGu';
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
+  box-sizing: border-box;
+  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif'; }
 
 html {
-  font-family: 'ChosunGu', sans-serif; }
+  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif'; }
 
 body {
-  font-family: 'ChosunGu', sans-serif; }
+  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif'; }
 
 h1 {
   margin: 0; }
@@ -349,13 +344,16 @@ ol {
   list-style: none;
   padding-left: 0; }
 
-body {
-  padding: 40px;
-  font-size: 20px; }
+* {
+  color: #303030; }
 
-h1 {
-  margin-bottom: 80px;
-  text-align: center; }
+body {
+  padding: 80px;
+  font-size: 18px; }
+
+#header {
+  text-align: center;
+  margin-bottom: 40px; }
 
 form {
   width: 100%;
@@ -375,7 +373,10 @@ form {
   height: 40px;
   border: 1px solid #303030;
   border-radius: 8px;
-  padding: 8px 12px; }
+  padding: 10px 12px 12px; }
+
+#task-input::placeholder {
+  color: #e0e0e0; }
 
 #task-submit {
   width: 40px;
@@ -384,14 +385,15 @@ form {
   border-radius: 8px;
   background-color: #303030;
   color: #ffffff;
-  transition: background-color 250ms ease-in-out; }
+  transition: background-color 200ms ease-in-out, border-color 200ms ease-in-out; }
 
 #task-submit:hover {
-  background-color: #808080; }
+  background-color: #4166e2;
+  border-color: #4166e2; }
 
 #task-list {
   width: 100%;
-  padding: 8px; }
+  padding: 12px; }
 
 #task-list li {
   position: relative;
@@ -405,10 +407,13 @@ form {
   display: inline-block;
   height: 20px; }
 
-#task-list .removeItem {
+#task-list .removeButton {
   position: absolute;
-  right: -8px;
+  right: -12px;
   text-align: center;
   width: 40px;
   height: 20px;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: color 200ms ease-in-out; }
+  #task-list .removeButton:hover {
+    color: #d81e1e; }
