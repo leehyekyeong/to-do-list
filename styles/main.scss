@@ -1,91 +1,91 @@
 @import './base/normalize';
 @import './base/reset';
 
+:root {
+  --black: #161616;
+  --white: #ffffff;
+  --gray: #c4c4c4;
+  --blue: #2f80ed;
+}
+
 * {
-  color: #303030;
+  color: #161616;
 }
 
 body {
-  padding: 80px;
-  font-size: 18px;
+  padding: 48px 15px;
 }
 
 #header {
+  font-size: 24px;
+  font-weight: bold;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
 }
 
-form {
-  width: 100%;
+.task-form {
+  width: 345px;
+  height: 48px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.content {
-  width: 480px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
   align-items: center;
+  margin: 0 auto 20px;
 }
 
 #task-input {
-  width: 432px;
-  height: 40px;
-  border: 1px solid #303030;
+  width: calc(100% - 52px);
+  height: 48px;
+  padding: 12px 16px;
+  border: 1px solid var(--gray);
   border-radius: 8px;
-  padding: 12px;
-}
-
-#task-input::placeholder {
-  color: #e0e0e0;
+  font-size: 18px;
 }
 
 #task-submit {
-  width: 40px;
-  height: 40px;
-  border: 1px solid #303030;
+  width: 48px;
+  height: 48px;
+  padding: 14px;
   border-radius: 8px;
-  background-color: #303030;
-  color: #ffffff;
-  transition: background-color 200ms ease-in-out, border-color 200ms ease-in-out;
+  background-color: var(--blue);
 }
 
-#task-submit:hover {
-  background-color: #4166e2;
-  border-color: #4166e2;
+#task-submit::placeholder {
+  color: var(--gray);
+}
+
+.add-icon {
+  width: 20px;
+  height: 20px;
+  background-image: url('../assets/plus-icon-m.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 #task-list {
-  width: 100%;
-  padding: 12px;
+  width: 345px;
+  padding: 0 16px;
+  margin: 0 auto;
 }
 
 #task-list li {
+  display: flex;
+  align-items: center;
   position: relative;
-  padding: 12px 0;
-  border-bottom: 1px solid #e0e0e0;
+  height: 44px;
+  font-size: 14px;
+  font-weight: normal;
+  border-bottom: 0.5px solid var(--gray);
 }
 
-#task-list li:last-child {
-  border: none;
-}
-
-#task-list .item {
+.remove-button {
   display: inline-block;
-  height: 20px;
-}
-
-#task-list .removeButton {
+  width: 44px;
+  height: 44px;
+  padding: 16px;
+  background-image: url('../assets/remove-button.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
   position: absolute;
-  right: -12px;
-  text-align: center;
-  width: 40px;
-  height: 20px;
-  cursor: pointer;
-  transition: color 200ms ease-in-out;
-  &:hover {
-    color: rgb(216, 30, 30);
-  }
+  top: 0;
+  right: -16px;
 }

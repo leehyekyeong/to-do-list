@@ -9,19 +9,13 @@
   </head>
   <body>
     <h1 id="header"></h1>
-    <div class="content">
-      <form>
-        <input type="text" id="task-input" placeholder="할 일 입력하기" />
-        <button
-          type="button"
-          id="task-submit"
-          onclick="addTask(); resetInput();"
-        >
-          +
-        </button>
-      </form>
-      <ul id="task-list"></ul>
-    </div>
+    <form class="task-form">
+      <input type="text" id="task-input" placeholder="할 일 입력하기" />
+      <button type="button" id="task-submit" onclick="addTask(); resetInput();">
+        <div class="add-icon"></div>
+      </button>
+    </form>
+    <ul id="task-list"></ul>
     <script src="./script.js"></script>
   </body>
 </html>

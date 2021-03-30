@@ -28,10 +28,8 @@ function addTask() {
   list.appendChild(listItem);
 
   listItem.innerHTML =
-    '<span class="item">' +
     taskList[taskList.length - 1] +
-    '</span>' +
-    '<span class="removeButton" onclick="removeTask(this)">×</span>';
+    '<span class="remove-button" onclick="removeTask(this)"></span>';
 
   // for (var i = 0; i < taskList.length; i++) {
   //   // list.innerHTML += '<li>' + taskList[i] + '</li>';
