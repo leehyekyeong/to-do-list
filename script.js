@@ -1,7 +1,7 @@
 // 사용자 이름 받기
-var userName = prompt('이름을 입력해주세요', '');
-var header = document.getElementById('header');
-header.innerHTML = userName + '의 To-Do List';
+// var userName = prompt('이름을 입력해주세요', '');
+// var header = document.getElementById('header');
+// header.innerHTML = userName + '의 To-Do List';
 
 // input에서 입력한 task가 들어갈 배열
 var taskList = [];
