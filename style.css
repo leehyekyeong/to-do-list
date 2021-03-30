@@ -373,7 +373,7 @@ form {
   height: 40px;
   border: 1px solid #303030;
   border-radius: 8px;
-  padding: 10px 12px 12px; }
+  padding: 12px; }
 
 #task-input::placeholder {
   color: #e0e0e0; }
